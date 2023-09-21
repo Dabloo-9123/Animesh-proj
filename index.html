@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="form">
+        <input type="url" id="url" placeholder="Enter Youtube url" required>
+        <button>Embed video</button>
+    </form>
+    <div id="player-container">
+        <div id="player"></div>
+        <button id="but" onclick="startVideo()"></button>
+        <button onclick="pauseVideo()">Pause video</button>
+    </div>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="index.js"></script>
+
+    <style>
+
+        #but{
+            width: 100px;
+            border-radius: 10px;
+            height: 50px;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX2wlzqc18a9YIy2fSDtuIpiQlmoUF3cb4hg&usqp=CAU');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border: none;
+             cursor: pointer;
+             position: absolute;
+             top: 39%;
+             left: 30%;
+        }
+    </style>
+</body>
+</html>
