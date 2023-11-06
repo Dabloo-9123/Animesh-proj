@@ -1,6 +1,8 @@
 let player;
 let form=document.getElementById('form')
 let butn=document.getElementById('but');
+let butn1=document.getElementById('but1');
+
 
 let videoId;
 form.addEventListener('submit',(e)=>{
@@ -34,7 +36,13 @@ function startVideo(){
     console.log(butn);
     setTimeout(() => {
         butn.style.display='none';
+       
+
     }, 1000);
+}
+function abc(){
+    butn.style.display='none';
+
 }
 function pauseVideo(){
     player.pauseVideo()
@@ -60,11 +68,15 @@ function onYouTubeIframeAPIReady(){
 
 function onPlayerReady(){
     console.log("Ready")
+    
+    
+
 }
 
 var done=false
 function onPlayerStateChange(event){
 if(event.data==YT.PlayerState.PLAYING && !done){
     done=true
+    abc()
 }
 }

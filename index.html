@@ -10,11 +10,15 @@
         <input type="url" id="url" placeholder="Enter Youtube url" required>
         <button>Embed video</button>
     </form>
-    <div id="player-container">
-        <div id="player"></div>
-        <button id="but" onclick="startVideo()"></button>
-        <button onclick="pauseVideo()">Pause video</button>
-    </div>
+    
+        <div id="player-container" onclick="abc()">
+           
+                <div id="player" ></div>
+            
+            <button id="but" onclick="startVideo()"></button>
+            <button onclick="pauseVideo()">Pause video</button>
+        </div>
+   
     <script src="https://www.youtube.com/iframe_api"></script>
     <script src="index.js"></script>
 
@@ -34,6 +38,10 @@
              top: 39%;
              left: 30%;
         }
+        #player{
+            border: solid 5px red;
+        }
+      
     </style>
 </body>
 </html>
