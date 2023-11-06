@@ -35,10 +35,11 @@ function startVideo(){
     player.playVideo();
     console.log(butn);
     setTimeout(() => {
-        butn.style.display='none';
+        // butn.style.display='none';
+        abc()
        
 
-    }, 1000);
+    }, 1500);
 }
 function abc(){
     butn.style.display='none';
