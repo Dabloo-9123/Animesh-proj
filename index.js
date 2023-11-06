@@ -39,10 +39,16 @@ function startVideo(){
         abc()
        
 
-    }, 1500);
+    }, 500);
 }
 function abc(){
-    butn.style.display='none';
+    // butn.style.display='none';
+    setTimeout(() => {
+        butn.style.display='none';
+        // abc()
+       
+
+    }, 500);
 
 }
 function pauseVideo(){
